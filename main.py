@@ -2,6 +2,9 @@ import pandas as pd
 from dotenv import dotenv_values
 from util.soundcloud_songs import GetSoundCloud
 from util.spotify_songs import GetSpotifyPlaylist
+from util.baselogger import logger
+from util.gcs import LoadData
+import time
 import os
 import datetime
 
@@ -54,3 +57,48 @@ def save_soundcloud():
         index=False,
         encoding="UTF-8",
     )
+
+
+def main():
+    try:
+        print("Saving Soundcloud and Spotify playlists")
+        save_soundcloud()
+        save_spotify()
+        time.sleep(1)
+
+        to_gcs = LoadData(
+            service_account=os.path.join(
+                os.path.dirname(__file__), "cred\\jordans-cred.json"
+            ),
+            googlescopes=["https://www.googleapis.com/auth/cloud-platform"],
+        )
+
+        to_bq = LoadData(
+            service_account=os.path.join(
+                os.path.dirname(__file__), "cred\\jordans-cred.json"
+            ),
+            googlescopes=["https://www.googleapis.com/auth/bigquery"],
+        )
+
+        # upload pulled playlist on current date
+        to_gcs.to_gsc_spec()
+
+        # Merge playlists together and get 1 raw data table for each source to upload to bigquery
+        to_gcs.gsc_staging("spotify")
+        to_gcs.gsc_staging("soundcloud")
+
+        # upload raw data to bigquery
+        to_bq("spotify")
+        to_bq("soundcloud")
+
+    except Exception as e:
+        print(f"error due to {e}")
+        logger.error("There was an error in scraping/uploading playlists: {e}")
+
+    else:
+        print(
+            "succesfully pulled playlists and uploaded in google storage and BigQuery"
+        )
+        logger.info(
+            "succesfully pulled playlists and uploaded in google storage and BigQuery"
+        )

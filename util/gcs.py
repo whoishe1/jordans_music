@@ -7,12 +7,8 @@ from io import StringIO
 import pandas as pd
 import datetime
 
-# reference: https://developers.google.com/identity/protocols/oauth2
-# scope for bigquery is usually: https://www.googleapis.com/auth/bigquery
-# scope for cloud storage is usually: https://www.googleapis.com/auth/cloud-platform
 
-
-class GoogleCreds:
+class LoadData:
     """
     loading data into Google Cloud Storage
 
@@ -36,8 +32,11 @@ class GoogleCreds:
     def connect(self, type_of_scope):
         """
         initialize client
-        """
 
+        reference: https://developers.google.com/identity/protocols/oauth2
+        scope for bigquery is usually: https://www.googleapis.com/auth/bigquery
+        scope for cloud storage is usually: https://www.googleapis.com/auth/cloud-platform
+        """
         # you must pass a list into the scopes api
         credentials = service_account.Credentials.from_service_account_file(
             self.service_account, scopes=self.googlescopes
@@ -57,10 +56,10 @@ class GoogleCreds:
         gcs_cred = self.connect(type_of_scope="cloud_storage")
 
         spotify_df = str(
-            max(pathlib.Path(r"..\data\spotify").glob("*"), key=os.path.getmtime)
+            max(pathlib.Path(r".\data\spotify").glob("*"), key=os.path.getmtime)
         )
         soundcloud_df = str(
-            max(pathlib.Path(r"..\data\soundcloud").glob("*"), key=os.path.getmtime)
+            max(pathlib.Path(r".\data\soundcloud").glob("*"), key=os.path.getmtime)
         )
 
         dfs = {
@@ -86,13 +85,11 @@ class GoogleCreds:
 
         df = self.merge_playlists(type_of_playlist)
 
-        currentdate = datetime.datetime.now().strftime("%Y-%m-%d")
-
         if type_of_playlist == "spotify":
-            blob = bucket.blob(f"spotify_staging/spotify_{currentdate}.csv")
+            blob = bucket.blob(f"spotify_staging/spotify.csv")
             blob.upload_from_string(df.to_csv(index=False), "text/csv")
         elif type_of_playlist == "soundcloud":
-            blob = bucket.blob(f"soundcloud_staging/soundcloud_{currentdate}.csv")
+            blob = bucket.blob(f"soundcloud_staging/soundcloud.csv")
             blob.upload_from_string(df.to_csv(index=False), "text/csv")
 
     def merge_playlists(self, playlist):
@@ -132,8 +129,64 @@ class GoogleCreds:
 
         return spec_playlist
 
+    def spotify_staging_to_bq(self):
+        """
+        Insert raw data into BigQuery from Cloud Storage
+        """
 
-ex = GoogleCreds(
-    service_account=os.path.join(os.path.dirname(__file__), "cred\\jordans-cred.json"),
-    googlescopes=["https://www.googleapis.com/auth/cloud-platform"],
-)
+        client = self.connect(type_of_scope="bigquery")
+
+        spotify = [
+            bigquery.SchemaField("track_id", "STRING", mode="REQUIRED"),
+            bigquery.SchemaField("artists", "STRING"),
+            bigquery.SchemaField("trackname", "STRING"),
+            bigquery.SchemaField("album", "STRING"),
+        ]
+
+        job_config = bigquery.LoadJobConfig(
+            schema=spotify,
+            skip_leading_rows=1,
+            # The source format defaults to CSV, so the line below is optional.
+            source_format=bigquery.SourceFormat.CSV,
+            write_disposition="WRITE_TRUNCATE",
+        )
+
+        table_id = "{self.project}.music.spotify"
+        uri = f"gs://{self.bucket_name}/spotify_staging/spotify.csv"
+
+        load_job = client.load_table_from_uri(uri, table_id, job_config=job_config)
+
+        load_job.result()
+
+        destination_table = client.get_table(table_id)
+        print("Loaded {} rows.".format(destination_table.num_rows))
+
+    def soundcloud_staging_to_bq(self):
+        """
+        Insert raw data into BigQuery from Cloud Storage
+        """
+
+        client = self.connect(type_of_scope="bigquery")
+
+        soundcloud = [
+            bigquery.SchemaField("trackname", "STRING"),
+            bigquery.SchemaField("artists", "STRING"),
+        ]
+
+        job_config = bigquery.LoadJobConfig(
+            schema=soundcloud,
+            skip_leading_rows=1,
+            # The source format defaults to CSV, so the line below is optional.
+            source_format=bigquery.SourceFormat.CSV,
+            write_disposition="WRITE_TRUNCATE",
+        )
+
+        table_id = f"{self.project}.music.soundcloud"
+        uri = f"gs://{self.bucket_name}/soundcloud_staging/soundcloud.csv"
+
+        load_job = client.load_table_from_uri(uri, table_id, job_config=job_config)
+
+        load_job.result()
+
+        destination_table = client.get_table(table_id)
+        print("Loaded {} rows.".format(destination_table.num_rows))
