@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: jordans-music-343121
+    description: music playlists from soundcloud and spotify
+    database: jordans-music-343121
+    schema: music
+    tables:
+      - name: spotify
+        description: spotify playlist
+      - name: soundcloud
+        description: soundcloud playlist
+      - name: test
+        description: seeding table
+
+models:
+  - name: staging_soundcloud
+    description: base table from soundcloud playlists
+    columns:
+      - name: trackname
+        tests:
+          - not_null
+      - name: artists
+        tests:
+          - not_null
+  - name: staging_spotify
+    description: base table from spotify playlists
+    columns:
+      - name: unique_code
+        description: unique identifier of all track_id,name and trackname
+        tests:
+          - not_null
+          - unique
+      - name: track_id
+        description: spotify unique identifier for song and aritists
+        tests:
+          - not_null
+      - name: artists
+        description: name of artist(s)
+        tests:
+          - not_null
+      - name: trackname
+        description: name of song
+        tests:
+          - not_null
+      - name: album
+        description: name of album
+        tests:
+          - not_null
