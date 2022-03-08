@@ -68,14 +68,14 @@ def main():
 
         to_gcs = LoadData(
             service_account=os.path.join(
-                os.path.dirname(__file__), "cred\\jordans-cred.json"
+                os.path.dirname(__file__), "util\\cred\\jordans-cred.json"
             ),
             googlescopes=["https://www.googleapis.com/auth/cloud-platform"],
         )
 
         to_bq = LoadData(
             service_account=os.path.join(
-                os.path.dirname(__file__), "cred\\jordans-cred.json"
+                os.path.dirname(__file__), "util\\cred\\jordans-cred.json"
             ),
             googlescopes=["https://www.googleapis.com/auth/bigquery"],
         )
@@ -88,8 +88,8 @@ def main():
         to_gcs.gsc_staging("soundcloud")
 
         # upload raw data to bigquery
-        to_bq("spotify")
-        to_bq("soundcloud")
+        to_bq.spotify_staging_to_bq()
+        to_bq.soundcloud_staging_to_bq()
 
     except Exception as e:
         print(f"error due to {e}")
@@ -102,3 +102,7 @@ def main():
         logger.info(
             "succesfully pulled playlists and uploaded in google storage and BigQuery"
         )
+
+
+if __name__ == "__main__":
+    main()

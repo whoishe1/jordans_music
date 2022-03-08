@@ -151,7 +151,7 @@ class LoadData:
             write_disposition="WRITE_TRUNCATE",
         )
 
-        table_id = "{self.project}.music.spotify"
+        table_id = f"{self.project}.music.spotify"
         uri = f"gs://{self.bucket_name}/spotify_staging/spotify.csv"
 
         load_job = client.load_table_from_uri(uri, table_id, job_config=job_config)
