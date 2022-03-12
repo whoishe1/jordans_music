@@ -14,8 +14,9 @@ class LoadData:
 
     Attributes:
         service_account(json): google service account credentials
-        googlescopes(list): Spotify authorization scopes, i.e. 'playlist-read-private'
+        googlescopes(list): Spotify authorization scopes, i.e. 'https://www.googleapis.com/auth/bigquery'
         project: name of google project
+        bucket_name: name of google storage bucket
 
     """
 
