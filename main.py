@@ -4,6 +4,7 @@ from util.soundcloud_songs import GetSoundCloud
 from util.spotify_songs import GetSpotifyPlaylist
 from util.baselogger import logger
 from util.gcs import LoadData
+from schemas.playlist_schemas import spotify_schema, soundcloud_schema
 import time
 import os
 import datetime
@@ -21,7 +22,15 @@ def save_spotify():
         client_secret=config["CLIENT_SECRET"],
     )
 
-    pl = ["lp", "the six", "the five", "the three", "the two", "the one"]
+    pl = [
+        "FUNK AND SOUL",
+        "lp",
+        "the six",
+        "the five",
+        "the three",
+        "the two",
+        "the one",
+    ]
 
     output = []
     for i in pl:
@@ -62,34 +71,44 @@ def save_soundcloud():
 def main():
     try:
         print("Saving Soundcloud and Spotify playlists")
-        save_soundcloud()
-        save_spotify()
+        # save_soundcloud()
+        # save_spotify()
         time.sleep(1)
 
-        to_gcs = LoadData(
+        to_google = LoadData(
             service_account=os.path.join(
                 os.path.dirname(__file__), "util\\cred\\jordans-cred.json"
             ),
-            googlescopes=["https://www.googleapis.com/auth/cloud-platform"],
-        )
-
-        to_bq = LoadData(
-            service_account=os.path.join(
-                os.path.dirname(__file__), "util\\cred\\jordans-cred.json"
-            ),
-            googlescopes=["https://www.googleapis.com/auth/bigquery"],
+            googlescopes=[
+                "https://www.googleapis.com/auth/cloud-platform",
+                "https://www.googleapis.com/auth/bigquery",
+            ],
+            project="jordans-music-343121",
+            bucket_name="jordans_music",
         )
 
         # upload pulled playlist on current date
-        to_gcs.to_gsc_spec()
+        to_google.to_gsc_spec()
 
-        # Merge playlists together and get 1 raw data table for each source to upload to bigquery
-        to_gcs.gsc_staging("spotify")
-        to_gcs.gsc_staging("soundcloud")
+        # # Merge playlists together and get 1 raw data table for each source to upload to bigquery
+        to_google.gsc_staging("spotify")
+        to_google.gsc_staging("soundcloud")
 
-        # upload raw data to bigquery
-        to_bq.spotify_staging_to_bq()
-        to_bq.soundcloud_staging_to_bq()
+        # # upload raw data to bigquery
+        to_google.to_bq(
+            schema=spotify_schema,
+            dataset_name="music",
+            table_name="spotify",
+            subfolder="spotify_staging",
+            name_of_csv="spotify",
+        )
+        to_google.to_bq(
+            schema=soundcloud_schema,
+            dataset_name="music",
+            table_name="soundcloud",
+            subfolder="soundcloud_staging",
+            name_of_csv="soundcloud",
+        )
 
     except Exception as e:
         print(f"error due to {e}")

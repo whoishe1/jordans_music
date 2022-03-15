@@ -52,6 +52,10 @@ class GetSoundCloud:
 
             these_urls = [("https://soundcloud.com" + i) for i in corr_ext]
             self.playlist_urls = these_urls
+
+        except Exception as e:
+            print(e)
+
         finally:
             driver.quit()
             return these_urls
@@ -70,6 +74,7 @@ class GetSoundCloud:
         """
         driver = webdriver.Chrome()
         try:
+            name_of_playlist = this_url.split("/")[-1]
             driver.get(this_url)
             last_height = driver.execute_script("return document.body.scrollHeight")
             while True:
@@ -100,8 +105,12 @@ class GetSoundCloud:
                 {
                     "trackname": pd.Series(tracknames_list),
                     "artists": pd.Series(artistnames_list),
+                    "name_of_playlist": name_of_playlist,
                 }
             )
+
+        except Exception as e:
+            print(e)
 
         finally:
             driver.quit()

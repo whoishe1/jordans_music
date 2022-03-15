@@ -1,15 +1,26 @@
-Welcome to your new dbt project!
+- Running dbt
 
-### Using the starter project
+  - `dbt init dbt`: Creates the project folder
+  - `dbt debug`: Checks the connection with the Postgres database
+  - `dbt deps`: Installs the test dependencies
+  - `dbt seed`: Loads the CSV files into staging tables in the database in postgres
+  - `dbt run`: Runs the transformations and loads the data into the database
+  - `dbt docs generate`: Generates the documentation of the dbt project
+  - `dbt docs serve`: Serves the documentation on a webserver
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+    - `build`: build and test all selected resources (models, seeds, snapshots, tests)
+    - `clean` (CLI only): deletes artifacts present in the dbt project
+    - `compile`: compiles (but does not run) the models in a project
+    - `debug` (CLI only): debugs dbt connections and projects
+    - `deps`: downloads dependencies for a project
+    - `docs` : generates documentation for a project
+    - `init` (CLI only): initializes a new dbt project
+    - `list` (CLI only): lists resources defined in a dbt project
+    - `parse` (CLI only): parses a project and writes detailed timing info
+    - `run`: runs the models in a project
+    - `seed`: loads CSV files into the database
+    - `snapshot`: executes "snapshot" jobs defined in a project
+    - `source`: provides tools for working with source data (including validating that sources are "fresh")
+    - `test`: executes tests defined in a project
+    - `rpc` (CLI only): runs an RPC server that clients can submit queries to
+    - `run-operation`: runs arbitrary maintenance SQL against the database

@@ -104,6 +104,8 @@ class GetSpotifyPlaylist:
             else:
                 pl_df = this_df
 
+            pl_df["name_of_playlist"] = playlistname
+
         except Exception as e:
             print("Failed to get playlist dataframe because of " + str(e))
 
