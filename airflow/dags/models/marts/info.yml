@@ -5,17 +5,13 @@ models:
     description: top 10 artists from soundcloud
     columns:
       - name: artists
-        # tests:
-        #   - not_null
       - name: count_artists
-        # tests:
-        #   - not_null
+      - name: invocation_id
+        description: date model was executed
   - name: top_10_artists_spotify
     description: top 10 artists from spotify
     columns:
       - name: artists
-        # tests:
-        #   - not_null
       - name: count_artists
-        # tests:
-        #   - not_null
+      - name: invocation_id
+        description: date model was executed

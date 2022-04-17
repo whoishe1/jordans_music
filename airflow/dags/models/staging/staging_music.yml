@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: jordans-music-343121
+  - name: jordans-music
     description: music playlists from soundcloud and spotify
     database: jordans-music-343121
     schema: music
@@ -23,6 +23,8 @@ models:
       - name: artists
         tests:
           - not_null
+      - name: invocation_id
+        description: date model was executed
   - name: staging_spotify
     description: base table from spotify playlists
     columns:
@@ -47,3 +49,5 @@ models:
         description: name of album
         tests:
           - not_null
+      - name: invocation_id
+        description: date model was executed
