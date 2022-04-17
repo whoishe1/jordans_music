@@ -1,7 +1,7 @@
 #custom
 notes.txt
 util/cred/
-data/
+.data/
 old/
 todo.txt
 airflow/data/profiles/jordans-cred.json

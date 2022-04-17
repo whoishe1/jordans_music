@@ -5,6 +5,7 @@ from datetime import datetime
 
 
 default_args = {
+    "owner": "Jordan",
     "depends_on_past": False,
     "email": ["kojordan9112@gmail.com"],
     "email_on_failure": False,
@@ -15,6 +16,7 @@ default_args = {
 
 with DAG(
     dag_id="start_music_pipeline",
+    description="dbt run bash command",
     default_args=default_args,
     schedule_interval=None,
     catchup=False,
@@ -23,7 +25,7 @@ with DAG(
     # task 1
     warmup_task = DummyOperator(task_id="warmup_task")
 
-    bash_cmd = "dbt run --project-dir /home/airflow/gcs/dags --profiles-dir /home/airflow/gcs/data/profiles"
+    bash_cmd = "dbt run --project-dir /home/airflow/gcs/data/project --profiles-dir /home/airflow/gcs/data/profiles"
 
     bash_task = BashOperator(task_id="dbt_task", bash_command=bash_cmd)
 

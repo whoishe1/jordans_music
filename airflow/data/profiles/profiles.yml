@@ -1,0 +1,11 @@
+jordans_music:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: jordans-music-343121
+      dataset: music
+      threads: 1
+      keyfile: "/home/airflow/gcs/data/profiles/jordans-cred.json"
+      location: US
