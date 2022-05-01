@@ -26,7 +26,6 @@ def save_spotify():
         "FUNK AND SOUL",
         "lp",
         "the six",
-        "the five",
         "the three",
         "the two",
         "the one",
@@ -71,7 +70,7 @@ def save_soundcloud():
 def main():
     try:
         print("Saving Soundcloud and Spotify playlists")
-        # save_soundcloud()
+        save_soundcloud()
         save_spotify()
         time.sleep(1)
 

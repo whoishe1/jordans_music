@@ -10,8 +10,6 @@ sources:
         description: spotify playlist
       - name: soundcloud
         description: soundcloud playlist
-      - name: test
-        description: seeding table
 
 models:
   - name: staging_soundcloud

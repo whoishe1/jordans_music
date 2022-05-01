@@ -38,6 +38,8 @@ models:
     staging:
       +schema: staging
       +materialized: table
+      +tags: jordans_music_staging
     marts:
       +schema: marts
       +materialized: view
+      +tags: jordans_music_marts

@@ -5,7 +5,7 @@ util/cred/
 old/
 todo.txt
 airflow/data/profiles/jordans-cred.json
-
+todo.text
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
