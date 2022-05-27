@@ -34,7 +34,7 @@ clean-targets: # directories to be removed by `dbt clean`
 
 seeds:
   jordans_music:
-    schema: staging
+    schema: music
 
 models:
   jordans_music:

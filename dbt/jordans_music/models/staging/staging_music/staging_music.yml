@@ -10,6 +10,10 @@ sources:
         description: spotify playlist
       - name: soundcloud
         description: soundcloud playlist
+      - name: fruits_initial
+        description: my fruits on the initial sync
+      - name: fruits_update
+        description: my fruits on the updated sync
 
 models:
   - name: staging_soundcloud
