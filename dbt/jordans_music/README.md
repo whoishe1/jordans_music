@@ -2,7 +2,7 @@
 
 - By default, the `.profile` file is created in the folder: `~/.dbt/` and dbt looks to run it from there.
 
-  - If you want to change directory of `profiles` or `dbt_project`, you need to use the `--project-dir my_folder_path` or `--profiles-dir my_folder_path` option when executing command
+  - If you want to change directory of `profiles` or `dbt_project`, you need to use the `--project-dir my_folder_path` or `--profiles-dir my_folder_path` option when executing command. When specifying the `--project-dir` path, dbt automatically searches for the `dbt_project.yaml` file, likewise when using the `--profiles-dir` path, dbt looks for the `profiles.yaml` file.
 
     ```
     dbt run --project-dir my_folder_path --profiles-dir my_folder_path
@@ -13,6 +13,8 @@
     - The dataset here doesn't matter, it acts as a default entry point for BigQuery schema. `dataset` and `schema` are interchangeable.
 
   - We should create an `dev` project and a `prod` project in BigQuery. BigQuery allows tables to be accessed from different projects.
+
+- Consider using [dbt-expectations](https://github.com/calogica/dbt-expectations) when writing more tests besides the basic tests dbt comes with.
 
 ### Version
 

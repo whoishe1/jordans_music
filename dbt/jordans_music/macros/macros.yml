@@ -1,0 +1,59 @@
+version: 2
+
+macros:
+  - name: datetime_to_date
+    description: datetime to date
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: datetime
+        description: name of column
+
+  - name: generate_schema_name
+    description: removes the default schema name (from the .profiles yaml file) and appending to custom schema name when creating a schema
+    docs:
+      show: true
+    arguments:
+      - name: custom_schema_name
+        type: string
+        description: The configured value of schema in the specified node, or none if a value is not supplied
+      - name: node
+        type: intger
+        description: The node that is currently being processed by dbt
+
+  - name: to_bool_from_float
+    description: float to boolean
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: float
+        description: name of column
+
+  - name: to_int
+    description: cast value to integer
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: string
+        description: name of column
+
+  - name: utc_to_date
+    description: UTC to datetime
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: string
+        description: name of column
+
+  - name: utc_to_pst
+    description: UTC to pst datetime
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: date
+        description: name of column
