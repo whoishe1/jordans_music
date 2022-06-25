@@ -18,17 +18,7 @@
 
 ### Version
 
-- This project is using `dbt 0.21.1`
-
-- The most stable version is now `1.0`:
-
-  - `seed-paths` have replaced `data-paths` in `dbt-project.yml` with a default value of seeds.
-
-  - In newer versions, seeds are under `seed-paths: ["seeds"]`, currently it is under `data-paths: ["data"]`
-
-  - `model-paths` have replaced `source-paths` in `dbt-project.yml`.
-
-  - The packages-install-path was updated from modules-path. Additionally the default value is now `dbt_packages` instead of `dbt_modules`. You may need to update this value in `clean-targets`.
+- This project is using `dbt 1.1`
 
 #### Commands
 
@@ -62,7 +52,18 @@
   - `rpc` (CLI only): runs an RPC server that clients can submit queries to
   - `run-operation`: runs arbitrary maintenance SQL against the database
   - `test` - run tests on each query
-    `dbt test`
-    `dbt test --select name_of_model`
-    `dbt test --select tag:my_model_tag`
+
     - https://docs.getdbt.com/reference/node-selection/test-selection-examples
+    - by default when you run a test, it will touch all parents.
+    - In the example below if you were to run this with just `dbt test -s model0` then dbt will first build `model0` and then `model1`. If you want to avoid this relationship then use `dbt test -s model0 --indirect-selection=cautious`, dbt will then not select this test, because not all parents were selected
+
+    ```
+        models:
+        - name: model0
+            columns:
+            - name: customer_id
+                tests:
+                - relationships:
+                    to: ref('model1')
+                    field: id
+    ```

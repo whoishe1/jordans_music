@@ -93,8 +93,12 @@ class GetSoundCloud:
                     "trackItem__trackTitle sc-link-dark sc-link-primary sc-font-light"
                 },
             )
+
             artist_names = soup.find_all(
-                "a", class_={"trackItem__username sc-link-light sc-link-secondary"}
+                "a",
+                class_={
+                    "trackItem__username sc-link-light sc-link-secondary sc-mr-0.5x"
+                },
             )
 
             tracknames_list = [str(names.text) for names in track_names]

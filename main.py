@@ -23,7 +23,7 @@ def save_spotify():
     )
 
     pl = [
-        "FUNK AND SOUL",
+        "FUNKSOULJAZZ",
         "lp",
         "the six",
         "the three",
@@ -89,14 +89,14 @@ def main():
         # upload pulled playlist on current date
         to_google.to_gsc_spec()
 
-        # # Merge playlists together and get 1 raw data table for each source to upload to bigquery
+        # Merge playlists together and get 1 raw data table for each source to upload to bigquery
         to_google.gsc_staging("spotify")
         to_google.gsc_staging("soundcloud")
 
-        # # upload raw data to bigquery
+        # upload raw data to bigquery
         to_google.to_bq(
             schema=spotify_schema,
-            dataset_name="music",
+            dataset_name="music",sa
             table_name="spotify",
             subfolder="spotify_staging",
             name_of_csv="spotify",

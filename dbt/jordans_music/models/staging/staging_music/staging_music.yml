@@ -20,11 +20,11 @@ models:
     description: base table from soundcloud playlists
     columns:
       - name: trackname
-        tests:
-          - not_null
+        # tests:
+        #   - not_null
       - name: artists
-        tests:
-          - not_null
+        # tests:
+        #   - not_null
       - name: invocation_id
         description: date model was executed
   - name: staging_spotify

@@ -1,0 +1,191 @@
+2022-05-27 19:45:14.892049 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.897050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.899050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.902050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.909051 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.910050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.949050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.950050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.951050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.952050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.953050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.954050 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.955051 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:14.956049 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:45:16.136051 (MainThread): unclosed <ssl.SSLSocket fd=1220, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50671, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 19:52:02.323412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:52:02.326411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:52:03.076411 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1372, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50724, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:52:07.338414 (Thread-1): Column 3 has no name. Using "d".
+2022-05-27 19:52:11.209411 (MainThread): unclosed <ssl.SSLSocket fd=1352, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50722, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:52:11.209411 (MainThread): unclosed <ssl.SSLSocket fd=1212, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50726, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:52:11.210411 (MainThread): unclosed <ssl.SSLSocket fd=1536, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50728, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:52:11.211432 (MainThread): unclosed <ssl.SSLSocket fd=1604, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50730, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:54:04.775411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.780412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.783411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.785411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.792411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.793412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.812412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.813412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.814411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.815410 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.817410 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.818410 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.819412 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:04.820411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:54:05.911411 (MainThread): unclosed <ssl.SSLSocket fd=1272, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50752, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:59:10.070138 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:59:10.818138 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1236, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50788, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 19:59:26.076138 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 19:59:26.811139 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1084, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50800, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:00:08.400145 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:00:34.078145 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:00:34.787147 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1272, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50819, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:06:29.013036 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1092, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50877, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:07:09.721036 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:07:10.398036 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=448, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50887, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:11:36.016123 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:11:36.797130 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1184, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50922, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:11:45.282200 (MainThread): unclosed <ssl.SSLSocket fd=1164, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50919, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:11:45.283201 (MainThread): unclosed <ssl.SSLSocket fd=376, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50924, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:11:45.284201 (MainThread): unclosed <ssl.SSLSocket fd=1436, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 50926, 0, 0), raddr=('2607:f8b0:400a:805::200a', 443, 0, 0)>
+2022-05-27 20:51:52.523452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.527452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.530452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.532452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.553450 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.554451 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.556452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.557452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.558452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.559452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.560452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:51:52.561452 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.125726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.129726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.132727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.135726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.137727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.153727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.154726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.196726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.197727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.198726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.199727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.200726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.201726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.202726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:01.203726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.653330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.657330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.660331 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.663330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.665333 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.672330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.673330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.692330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.694330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.695330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.696330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.697330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.698330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.720330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:16.721330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 20:53:17.677330 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1156, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51171, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:25.173331 (MainThread): unclosed <ssl.SSLSocket fd=1076, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51179, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:25.176330 (MainThread): unclosed <ssl.SSLSocket fd=1444, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51168, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:25.177330 (MainThread): unclosed <ssl.SSLSocket fd=1148, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51173, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:25.178333 (MainThread): unclosed <ssl.SSLSocket fd=1568, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51175, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:25.179331 (MainThread): unclosed <ssl.SSLSocket fd=1168, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51177, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:50.827424 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1200, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51189, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:55.316424 (Thread-1): unclosed <ssl.SSLSocket fd=1156, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51191, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:53:59.080424 (MainThread): unclosed <ssl.SSLSocket fd=1448, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51197, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 20:55:37.298747 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1020, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51246, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:02:24.433324 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1192, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51338, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:02:29.974415 (MainThread): unclosed <ssl.SSLSocket fd=1260, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51336, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:02:29.975415 (MainThread): unclosed <ssl.SSLSocket fd=1184, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51340, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:02:29.975415 (MainThread): unclosed <ssl.SSLSocket fd=1348, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51342, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:02:29.976415 (MainThread): unclosed <ssl.SSLSocket fd=1432, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51344, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:04:05.168726 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-05-27 21:04:05.880726 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1368, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51362, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:04:14.072031 (MainThread): unclosed <ssl.SSLSocket fd=1484, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51370, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:04:19.562883 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1252, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51376, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-05-27 21:04:20.261883 (Thread-1): unclosed <ssl.SSLSocket fd=1288, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:f103:ff91:118a:a248', 51378, 0, 0), raddr=('2607:f8b0:400a:806::200a', 443, 0, 0)>
+2022-06-23 17:16:46.776737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.781738 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.783738 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.785737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.788737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.803738 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.804737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.842737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.843738 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.844738 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.845737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.846737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.847737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.848737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:46.849737 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-23 17:16:47.882130 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1272, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:4c9a:1839:8113:b55b', 50500, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-23 17:16:48.473417 (Thread-1): unclosed <ssl.SSLSocket fd=844, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:4c9a:1839:8113:b55b', 50502, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:17.698917 (ThreadPoolExecutor-0_0): unclosed <ssl.SSLSocket fd=1352, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64453, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:18.970798 (MainThread): unclosed <ssl.SSLSocket fd=1200, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64459, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:18.977799 (Thread-1): unclosed <ssl.SSLSocket fd=1344, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64451, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:18.978798 (Thread-1): unclosed <ssl.SSLSocket fd=1372, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64457, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:31.779769 (Thread-1): unclosed <ssl.SSLSocket fd=464, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64463, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:31.780768 (Thread-1): unclosed <ssl.SSLSocket fd=1508, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64468, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:31.781768 (Thread-1): unclosed <ssl.SSLSocket fd=1652, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64472, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:31.782769 (Thread-1): unclosed <ssl.SSLSocket fd=1716, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64475, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:42.258483 (Thread-1): unclosed <ssl.SSLSocket fd=1904, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64486, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:43.497769 (Thread-1): unclosed <ssl.SSLSocket fd=1792, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64479, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:43.498770 (Thread-1): unclosed <ssl.SSLSocket fd=1932, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64489, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:44.733765 (Thread-1): unclosed <ssl.SSLSocket fd=1972, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64492, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:47.286017 (Thread-1): unclosed <ssl.SSLSocket fd=2020, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64496, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:48.541750 (Thread-1): unclosed <ssl.SSLSocket fd=2028, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64499, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:49.756754 (Thread-1): unclosed <ssl.SSLSocket fd=1964, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64494, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:49.757755 (Thread-1): unclosed <ssl.SSLSocket fd=2052, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64502, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:51.086799 (Thread-1): unclosed <ssl.SSLSocket fd=2124, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64505, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:34:57.558858 (MainThread): unclosed <ssl.SSLSocket fd=516, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 64513, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:14.007666 (ThreadPoolExecutor-0_0): unclosed <ssl.SSLSocket fd=1288, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49187, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:15.274668 (MainThread): unclosed <ssl.SSLSocket fd=1372, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49193, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:15.283671 (Thread-1): unclosed <ssl.SSLSocket fd=1260, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49185, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:15.284670 (Thread-1): unclosed <ssl.SSLSocket fd=1352, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49191, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:28.178690 (Thread-1): unclosed <ssl.SSLSocket fd=1088, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49198, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:28.179689 (Thread-1): unclosed <ssl.SSLSocket fd=1508, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49201, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:28.180690 (Thread-1): unclosed <ssl.SSLSocket fd=1596, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49205, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:28.180690 (Thread-1): unclosed <ssl.SSLSocket fd=1648, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49209, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:38.106728 (Thread-1): unclosed <ssl.SSLSocket fd=1848, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60522, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:39.310004 (Thread-1): unclosed <ssl.SSLSocket fd=1700, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 49212, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:39.310004 (Thread-1): unclosed <ssl.SSLSocket fd=1840, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60524, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:40.542809 (Thread-1): unclosed <ssl.SSLSocket fd=1916, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60527, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:42.944007 (Thread-1): unclosed <ssl.SSLSocket fd=1992, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60532, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:44.294047 (Thread-1): unclosed <ssl.SSLSocket fd=1984, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60535, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:45.551716 (Thread-1): unclosed <ssl.SSLSocket fd=1952, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60530, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:45.552716 (Thread-1): unclosed <ssl.SSLSocket fd=1532, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60537, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:47.025852 (Thread-1): unclosed <ssl.SSLSocket fd=1248, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60540, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 05:53:53.548851 (MainThread): unclosed <ssl.SSLSocket fd=2280, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 60547, 0, 0), raddr=('2607:f8b0:400a:801::200a', 443, 0, 0)>
+2022-06-25 06:21:11.460403 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-25 06:21:12.222838 (ThreadPoolExecutor-0_0): unclosed <ssl.SSLSocket fd=1332, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63681, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:12.906587 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1232, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63686, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:16.264973 (Thread-1): unclosed <ssl.SSLSocket fd=1324, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63679, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:16.265974 (Thread-1): unclosed <ssl.SSLSocket fd=1244, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63688, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:16.266973 (Thread-1): unclosed <ssl.SSLSocket fd=1476, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63692, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:30.045166 (Thread-1): unclosed <ssl.SSLSocket fd=1524, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63695, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:30.046156 (Thread-1): unclosed <ssl.SSLSocket fd=1608, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63698, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:30.047155 (Thread-1): unclosed <ssl.SSLSocket fd=1628, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63702, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:37.839177 (Thread-1): unclosed <ssl.SSLSocket fd=1864, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63712, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:39.069070 (Thread-1): unclosed <ssl.SSLSocket fd=1920, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63715, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:40.284553 (Thread-1): unclosed <ssl.SSLSocket fd=1932, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63717, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:41.541279 (Thread-1): unclosed <ssl.SSLSocket fd=1760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63706, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:41.542277 (Thread-1): unclosed <ssl.SSLSocket fd=1992, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63721, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:44.188687 (Thread-1): unclosed <ssl.SSLSocket fd=2072, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63726, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:48.439968 (Thread-1): unclosed <ssl.SSLSocket fd=2020, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63723, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 06:21:48.440968 (Thread-1): unclosed <ssl.SSLSocket fd=2104, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 63728, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 07:11:33.294383 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-06-25 07:11:47.470103 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=388, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 56922, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 07:11:48.469746 (Thread-1): unclosed <ssl.SSLSocket fd=828, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 56924, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 07:12:14.890788 (ThreadPoolExecutor-1_0): unclosed <ssl.SSLSocket fd=1216, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 56947, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 07:12:15.493702 (Thread-1): unclosed <ssl.SSLSocket fd=1296, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 56949, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>
+2022-06-25 07:12:22.922819 (Thread-1): unclosed <ssl.SSLSocket fd=1608, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('2604:3d08:4c7c:80:153c:8a93:4faf:ff06', 56959, 0, 0), raddr=('2607:f8b0:400a:807::200a', 443, 0, 0)>

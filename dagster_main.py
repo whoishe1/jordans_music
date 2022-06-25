@@ -15,7 +15,6 @@ from util.gcs import LoadData
 from schemas.playlist_schemas import spotify_schema, soundcloud_schema
 import os
 import datetime
-import traceback
 
 config = dotenv_values(".env")
 
@@ -37,7 +36,7 @@ def general_success(context: HookContext):
     print(message)
 
 
-@op(ins={"second": In(Nothing)})
+@op(ins={"Second": In(Nothing)})
 def save_spotify():
     """Executes Spotify script that gets all playlists"""
 
@@ -49,10 +48,9 @@ def save_spotify():
     )
 
     pl = [
-        "FUNK AND SOUL",
+        "FUNKSOULJAZZ",
         "lp",
         "the six",
-        "the five",
         "the three",
         "the two",
         "the one",
@@ -72,7 +70,7 @@ def save_spotify():
     )
 
 
-@op(ins={"first": In(Nothing)})
+@op(ins={"First": In(Nothing)})
 def save_soundcloud():
     """Executes soundcloud script that gets all playlists"""
 
@@ -97,7 +95,7 @@ def save_soundcloud():
     )
 
 
-@op(ins={"third": In(Nothing)})
+@op(ins={"Third": In(Nothing)})
 def gcs_bq_google():
     """Connects to Google Cloud Storage and BigQuery and uploads staging data"""
 
