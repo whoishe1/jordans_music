@@ -91,12 +91,12 @@ def main():
 
         # Merge playlists together and get 1 raw data table for each source to upload to bigquery
         to_google.gsc_staging("spotify")
-        to_google.gsc_staging("soundcloud")
+        # to_google.gsc_staging("soundcloud")
 
         # upload raw data to bigquery
         to_google.to_bq(
             schema=spotify_schema,
-            dataset_name="music",sa
+            dataset_name="music",
             table_name="spotify",
             subfolder="spotify_staging",
             name_of_csv="spotify",

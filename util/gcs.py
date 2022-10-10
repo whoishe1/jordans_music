@@ -137,13 +137,13 @@ class LoadData:
 
         all_df = pd.concat(dfs)
 
-        spec_playlist = (
-            all_df.sort_values(by=["artists", "trackname", "name_of_playlist"])
-            .drop_duplicates(subset=["artists", "trackname"])
-            .reset_index(drop=True)
-        )
+        # spec_playlist = (
+        #     all_df.sort_values(by=["artists", "trackname", "name_of_playlist"])
+        #     .drop_duplicates(subset=["artists", "trackname"])
+        #     .reset_index(drop=True)
+        # )
 
-        return spec_playlist
+        return all_df
 
     def to_bq(self, schema, dataset_name, table_name, subfolder, name_of_csv):
         """

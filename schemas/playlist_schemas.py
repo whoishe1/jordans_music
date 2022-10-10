@@ -5,6 +5,7 @@ spotify_schema = [
     bigquery.SchemaField("artists", "STRING"),
     bigquery.SchemaField("trackname", "STRING"),
     bigquery.SchemaField("album", "STRING"),
+    bigquery.SchemaField("date_created", "TIMESTAMP"),
     bigquery.SchemaField("name_of_playlist", "STRING"),
 ]
 
@@ -12,5 +13,6 @@ spotify_schema = [
 soundcloud_schema = [
     bigquery.SchemaField("trackname", "STRING"),
     bigquery.SchemaField("artists", "STRING"),
+    bigquery.SchemaField("date_created", "TIMESTAMP"),
     bigquery.SchemaField("name_of_playlist", "STRING"),
 ]
