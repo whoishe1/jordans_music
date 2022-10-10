@@ -1,18 +1,18 @@
-with 
+with
 all_soundcloud as (
-    select 
+    select
         trackname,
         artists,
-        row_number () over (partition by trackname,artists order by trackname) as track_order,
+        date_created,
         name_of_playlist,
-        '{{invocation_id}}' as invocation_id
-    from {{ source('jordans-music','soundcloud') }}
-    where artists is not null and trackname is not null
+        row_number() over (partition by trackname,artists order by date_created desc) as track_order
+    from {{ source('jordans-music','soundcloud')}}
 )
-select
+select 
     trackname,
     artists,
-    track_order,
+    date_created,
     name_of_playlist,
-    invocation_id
+    '{{invocation_id}}' as invocation_id
 from all_soundcloud
+where track_order = 1
