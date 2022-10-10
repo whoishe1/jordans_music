@@ -1,4 +1,15 @@
-### Jordan's DBT project for music from Soundcloud and Spotify
+## Jordan's DBT project for music from Soundcloud and Spotify
+
+### Remember
+
+- Setup up a virtual environment in your root directory
+
+  - `virtualenv ./venv`
+  - `./venv/scripts/activate`
+
+- Install requirements
+
+  - `pip install -r requirements.txt`
 
 - By default, the `.profile` file is created in the folder: `~/.dbt/` and dbt looks to run it from there.
 
