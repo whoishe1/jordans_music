@@ -126,6 +126,7 @@ class LoadData:
 
         dfs = []
         for blob in gcs_cred.list_blobs(self.bucket_name, prefix=playlist):
+            date_created = blob.time_created
             blob = bucket.blob(blob.name)
             data = blob.download_as_bytes()
 
@@ -133,6 +134,7 @@ class LoadData:
             str_bytes = StringIO(s)
 
             df = pd.read_csv(str_bytes)
+            df["date_created"] = date_created
             dfs.append(df)
 
         all_df = pd.concat(dfs)
@@ -170,7 +172,7 @@ class LoadData:
             destination_table = client.get_table(table_id)
 
         except Exception as e:
-            print(f"Could not load unfunded data to BigQuery due to {e}")
+            print(f"Could not load data to BigQuery due to {e}")
 
         else:
             print("Loaded {} rows.".format(destination_table.num_rows))

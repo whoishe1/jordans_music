@@ -70,8 +70,8 @@ def save_soundcloud():
 def main():
     try:
         print("Saving Soundcloud and Spotify playlists")
-        save_soundcloud()
-        save_spotify()
+        # save_soundcloud()
+        # save_spotify()
         time.sleep(1)
 
         to_google = LoadData(
@@ -101,13 +101,13 @@ def main():
             subfolder="spotify_staging",
             name_of_csv="spotify",
         )
-        to_google.to_bq(
-            schema=soundcloud_schema,
-            dataset_name="music",
-            table_name="soundcloud",
-            subfolder="soundcloud_staging",
-            name_of_csv="soundcloud",
-        )
+        # to_google.to_bq(
+        #     schema=soundcloud_schema,
+        #     dataset_name="music",
+        #     table_name="soundcloud",
+        #     subfolder="soundcloud_staging",
+        #     name_of_csv="soundcloud",
+        # )
 
     except Exception as e:
         print(f"error due to {e}")

@@ -110,21 +110,3 @@ class GetSpotifyPlaylist:
             print(f"Failed to get playlist dataframe because of " + str(e))
 
         return pl_df
-
-
-# alltracks_obj = ReturnPlaylist(
-#     username=config["USERNAME"],
-#     scope="playlist-read-private",
-#     client_id=config["CLIENT_ID"],
-#     client_secret=config["CLIENT_SECRET"],
-# )
-
-# pl = ["lp", "the six", "the five","the three", "the two", "the one"]
-
-# output = []
-# for i in pl:
-#     df = alltracks_obj.get_playlists(i)
-#     output.append(df)
-
-# all_df = pd.concat(output).reset_index(drop=True)
-# all_df
