@@ -23,7 +23,7 @@ def save_spotify():
     )
 
     pl = [
-        "FUNKSOULJAZZ",
+        "FUNKSOULJAZZBREAK",
         "lp",
         "the six",
         "the three",
@@ -71,7 +71,7 @@ def main():
     try:
         print("Saving Soundcloud and Spotify playlists")
         # save_soundcloud()
-        # save_spotify()
+        save_spotify()
         time.sleep(1)
 
         to_google = LoadData(
