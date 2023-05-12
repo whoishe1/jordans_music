@@ -29,8 +29,6 @@ class LoadData:
         self.googlescopes = googlescopes
         self.project = project
         self.bucket_name = bucket_name
-        # self.project = "jordans-music-343121"
-        # self.bucket_name = "jordans_music"
 
     def connect(self, type_of_scope):
         """
@@ -51,7 +49,7 @@ class LoadData:
             client = storage.Client(project=self.project, credentials=credentials)
         return client
 
-    def to_gsc_spec(self):
+    def to_gcs_spec(self):
         """
         Upload soundcloud and spotify playlists to Google cloud storage on most recent date
         """
@@ -83,7 +81,7 @@ class LoadData:
         else:
             print(f"Uploaded specific spotify and soundcloud data")
 
-    def gsc_staging(self, type_of_playlist):
+    def gcs_staging(self, type_of_playlist):
         """
         Staging data to be uploaded in BigQuery
         """
@@ -138,12 +136,6 @@ class LoadData:
             dfs.append(df)
 
         all_df = pd.concat(dfs)
-
-        # spec_playlist = (
-        #     all_df.sort_values(by=["artists", "trackname", "name_of_playlist"])
-        #     .drop_duplicates(subset=["artists", "trackname"])
-        #     .reset_index(drop=True)
-        # )
 
         return all_df
 
