@@ -15,21 +15,30 @@ class GetSpotifyPlaylist:
 
     """
 
-    def __init__(self, username, scope, client_id, client_secret):
+    def __init__(self, username, scope, client_id, client_secret, redirect_uri):
         """Initialize ReturnPlayList"""
         self.username = username
         self.scope = scope
         self.client_id = client_id
         self.client_secret = client_secret
-        # self.redirect_uri = redirect_uri
+        self.redirect_uri = redirect_uri
 
     def get_connection(self):
-        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=self.scope))
+        sp = spotipy.Spotify(
+            auth_manager=SpotifyOAuth(
+                client_id=self.client_id,
+                client_secret=self.client_secret,
+                redirect_uri=self.redirect_uri,
+                scope=self.scope,
+            )
+        )
         return sp
 
     def my_playlists(self):
         sp = self.get_connection()
-        playlists = sp.user_playlists(self.username)
+        ### the method "user_playlists" not working, returns no playlist information ###
+        # playlists = sp.user_playlists(self.username)
+        playlists = sp.current_user_playlists(limit=50)
         stored_playlists = [value for idx, value in enumerate(playlists["items"])]
         list_playlists = [i["name"] for i in stored_playlists]
         return list_playlists
