@@ -36,7 +36,6 @@ class GetSpotifyPlaylist:
 
     def my_playlists(self):
         sp = self.get_connection()
-        ### the method "user_playlists" not working, returns no playlist information ###
         # playlists = sp.user_playlists(self.username)
         playlists = sp.current_user_playlists(limit=50)
         stored_playlists = [value for idx, value in enumerate(playlists["items"])]
