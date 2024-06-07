@@ -20,12 +20,12 @@ def save_spotify():
         scope="playlist-read-private",
         client_id=config["CLIENT_ID"],
         client_secret=config["CLIENT_SECRET"],
+        redirect_uri=config["REDIRECT_URI"],
     )
 
     pl = [
-        "FUNKSOULJAZZBREAK",
+        "FUNKSOULJAZZBREAKPIANO",
         "lp",
-        "the six",
         "the three",
         "the two",
         "the one",
@@ -87,10 +87,10 @@ def main():
         )
 
         # upload pulled playlist on current date
-        to_google.to_gsc_spec()
+        to_google.to_gcs_spec()
 
         # Merge playlists together and get 1 raw data table for each source to upload to bigquery
-        to_google.gsc_staging("spotify")
+        to_google.gcs_staging("spotify")
         # to_google.gsc_staging("soundcloud")
 
         # upload raw data to bigquery
