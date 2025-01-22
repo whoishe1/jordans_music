@@ -1,6 +1,6 @@
+import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-import pandas as pd
 
 
 class GetSpotifyPlaylist:
@@ -59,6 +59,8 @@ class GetSpotifyPlaylist:
         albums_ = []
         id_ = []
         for idx, item in enumerate(tracks["items"]):
+            if item["track"] is None:
+                continue
             track_detail = item["track"]
             id_.append(track_detail["id"])
             track_list_.append(track_detail["name"])
@@ -117,4 +119,4 @@ class GetSpotifyPlaylist:
             return pl_df
 
         except Exception as e:
-            print(f"Failed to get playlist dataframe because of " + str(e))
+            print("Failed to get playlist dataframe because of " + str(e))
