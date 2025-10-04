@@ -1,13 +1,15 @@
+import datetime
+import os
+import time
+
 import pandas as pd
 from dotenv import dotenv_values
-from util.soundcloud_songs import GetSoundCloud
-from util.spotify_songs import GetSpotifyPlaylist
+
+from schemas.playlist_schemas import spotify_schema
 from util.baselogger import logger
 from util.gcs import LoadData
-from schemas.playlist_schemas import spotify_schema, soundcloud_schema
-import time
-import os
-import datetime
+from util.soundcloud_songs import GetSoundCloud
+from util.spotify_songs import GetSpotifyPlaylist
 
 config = dotenv_values(".env")
 
@@ -25,7 +27,7 @@ def save_spotify():
 
     pl = [
         "FUNKSOULJAZZBREAKPIANO",
-        "lp",
+        "ROCK",
         "the three",
         "the two",
         "the one",
