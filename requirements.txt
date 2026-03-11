@@ -3,6 +3,7 @@ bs4
 dbt-bigquery
 dagit
 dagster
+dagster-webserver
 google-api-core
 google-auth
 google-cloud
