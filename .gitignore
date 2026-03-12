@@ -8,6 +8,23 @@ airflow/data/profiles/jordans-cred.json
 todo.text
 util/upload_other_data.py
 
+# Data (raw pipeline output)
+data/
+
+# Logs
+logs/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/public/data/
+
+# dbt
+dbt/jordans_music/target/
+dbt/jordans_music/logs/
+dbt/jordans_music/venv/
+dbt/jordans_music/.user.yml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
