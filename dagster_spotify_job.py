@@ -1,63 +1,66 @@
 import datetime
 import os
+from pathlib import Path
 
 import pandas as pd
-from dotenv import load_dotenv
 from dagster import job, op
+from dotenv import dotenv_values
 
-from schemas.playlist_schemas import soundcloud_schema, spotify_schema
-from util.gcs import LoadData
-from util.soundcloud_songs import GetSoundCloud
-from util.spotify_songs import GetSpotifyPlaylist
+from claude.gcs import LoadData
+from claude.playlist_schemas import spotify_schema
+from claude.soundcloud_songs import GetSoundCloud
+from claude.spotify_songs import GetSpotifyPlaylist
 
-load_dotenv()
+config = dotenv_values(".env")
 
-CRED_PATH = os.path.join(os.path.dirname(__file__), "util/cred/jordans-cred.json")
-GOOGLE_SCOPES_GCS = ["https://www.googleapis.com/auth/cloud-platform"]
-GOOGLE_SCOPES_BQ = ["https://www.googleapis.com/auth/bigquery"]
+SPOTIFY_PLAYLISTS = [
+    "FUNKSOULJAZZBREAKPIANO",
+    "ROCK",
+    "the three",
+    "the two",
+    "the one",
+]
+
+SOUNDCLOUD_URL = "https://soundcloud.com/whoishe1/sets"
+DATA_DIR = Path("data")
+CURRENT_DATE = datetime.datetime.now().strftime("%Y-%m-%d")
+
+CRED_PATH = os.path.join(os.path.dirname(__file__), "util", "cred", "jordans-cred.json")
+GOOGLE_SCOPES = [
+    "https://www.googleapis.com/auth/cloud-platform",
+    "https://www.googleapis.com/auth/bigquery",
+]
 PROJECT = "jordans-music-343121"
 BUCKET_NAME = "jordans_music"
-SOUNDCLOUD_URL = "https://soundcloud.com/jordan-lee-375/sets"
 DATASET_NAME = "music"
-DATE_STR = datetime.date.today().strftime("%Y-%m-%d")
 
 
 @op
 def save_soundcloud(context) -> str:
-    sc = GetSoundCloud(url=SOUNDCLOUD_URL)
-    playlist_urls = sc.which_playlists()
-    for url in playlist_urls:
-        df = sc.getplaylist(url)
-        playlist_name = url.split("/")[-1]
-        output_path = os.path.join("data", "soundcloud", f"soundcloud_{playlist_name}_{DATE_STR}.csv")
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        df.to_csv(output_path, index=False)
-        context.log.info(f"Saved SoundCloud playlist '{playlist_name}' to {output_path}")
+    sc = GetSoundCloud(SOUNDCLOUD_URL)
+    urls = sc.which_playlists()
+    dfs = [sc.get_playlist(url) for url in urls]
+    all_df = pd.concat(reversed(dfs)).reset_index(drop=True)
+    output_path = DATA_DIR / "soundcloud" / f"soundcloud_{CURRENT_DATE}.csv"
+    all_df.to_csv(output_path, index=False, encoding="UTF-8")
+    context.log.info(f"Saved {len(all_df)} SoundCloud tracks to {output_path}")
     return "soundcloud_done"
 
 
 @op
 def save_spotify(context) -> str:
-    sp = GetSpotifyPlaylist(
-        username=os.environ["USERNAME"],
+    spotify = GetSpotifyPlaylist(
+        username=config["USERNAME"],
         scope="playlist-read-private",
-        client_id=os.environ["CLIENT_ID"],
-        client_secret=os.environ["CLIENT_SECRET"],
-        redirect_uri=os.environ["REDIRECT_URI"],
+        client_id=config["CLIENT_ID"],
+        client_secret=config["CLIENT_SECRET"],
+        redirect_uri=config["REDIRECT_URI"],
     )
-    playlists = sp.my_playlists()
-    all_dfs = []
-    for playlist_name in playlists:
-        df = sp.get_playlists(playlist_name)
-        if df is not None:
-            all_dfs.append(df)
-
-    if all_dfs:
-        combined = pd.concat(all_dfs).reset_index(drop=True)
-        output_path = os.path.join("data", "spotify", f"spotify_{DATE_STR}.csv")
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        combined.to_csv(output_path, index=False)
-        context.log.info(f"Saved {len(combined)} Spotify tracks to {output_path}")
+    dfs = [spotify.get_playlists(name) for name in SPOTIFY_PLAYLISTS]
+    all_df = pd.concat(dfs).reset_index(drop=True)
+    output_path = DATA_DIR / "spotify" / f"spotify_{CURRENT_DATE}.csv"
+    all_df.to_csv(output_path, index=False, encoding="UTF-8")
+    context.log.info(f"Saved {len(all_df)} Spotify tracks to {output_path}")
     return "spotify_done"
 
 
@@ -67,7 +70,7 @@ def gcs_bq_google(context, soundcloud_status: str, spotify_status: str):
 
     loader = LoadData(
         service_account=CRED_PATH,
-        googlescopes=GOOGLE_SCOPES_GCS,
+        googlescopes=GOOGLE_SCOPES,
         project=PROJECT,
         bucket_name=BUCKET_NAME,
     )
@@ -75,33 +78,17 @@ def gcs_bq_google(context, soundcloud_status: str, spotify_status: str):
     loader.to_gcs_spec()
     context.log.info("Uploaded date-stamped CSVs to GCS")
 
-    for source in ("spotify", "soundcloud"):
-        loader.gcs_staging(source)
-        context.log.info(f"Uploaded {source} staging CSV to GCS")
+    loader.gcs_staging("spotify")
+    context.log.info("Uploaded Spotify staging CSV to GCS")
 
-    loader_bq = LoadData(
-        service_account=CRED_PATH,
-        googlescopes=GOOGLE_SCOPES_BQ,
-        project=PROJECT,
-        bucket_name=BUCKET_NAME,
-    )
-    loader_bq.to_bq(
+    loader.to_bq(
         schema=spotify_schema,
         dataset_name=DATASET_NAME,
         table_name="spotify",
         subfolder="spotify_staging",
         name_of_csv="spotify",
     )
-    context.log.info("Loaded Spotify staging data into BigQuery")
-
-    loader_bq.to_bq(
-        schema=soundcloud_schema,
-        dataset_name=DATASET_NAME,
-        table_name="soundcloud",
-        subfolder="soundcloud_staging",
-        name_of_csv="soundcloud",
-    )
-    context.log.info("Loaded SoundCloud staging data into BigQuery")
+    context.log.info("Loaded Spotify data into BigQuery")
 
 
 @job
